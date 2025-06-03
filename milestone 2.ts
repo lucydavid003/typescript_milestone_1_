@@ -143,7 +143,8 @@ for (let string of arr8){
 return counts;
 }
 
-console.log(countTruthy({ a: 0, b: "hello", c: false, d: 42 }));
+//county truthy//
+
 //average number//
 function average(arr7: number[]): number {
   let sum = 0;
