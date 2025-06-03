@@ -48,21 +48,18 @@ function findLargest(
 }
 //bmi calculator//
 function calculateBmi(weight: number, height: number): string {
-  const bmi: number = weight / (height * height);
-  let category: string;
+  const BMI: number = weight / (height * height);
+  let weight: string;
 
-  if (bmi < 18.5) {
-    category = "Underweight";
-  } else if (bmi >= 18.5 && bmi <= 24.9) {
-    category = "Normal weight";
-  } else if (bmi >= 25 && bmi <= 29.9) {
-    category = "Overweight";
-  } else {
-    category = "Obese";
+  if (BMI < 18.5) { = "Underweight";
+  } else if (BMI>= 18.5 && BMI <= 24.9) = "Normal weight";
+  } else if (BMI >= 25 && BMI <= 29.9) { = "Overweight";
+  } else {"Obese";
   }
 
-  return `BMI is ${bmi.toFixed(2)} — ${category}`;
-}
+  return 
+  //not working//
+
 
 //greeting based on time//
 function greetUser(name: string, time: number): string {
@@ -83,31 +80,31 @@ function greetUser(name: string, time: number): string {
 }
 
 //fizzbuzz//
-function fizzBuzzCheck(number: number): string | number {
-  const modular3 = number % 3;
-  const modular5 = number % 5;
+function fizzBuzzCheck(num1: number): string | number {
+  const div3 = num1 % 3;
+  const div5 = num1 % 5;
   let buzztyp: string | number;
 
-  if (modular3 === 0 && modular5 === 0) {
+  if (div3 === 0 && div5 === 0) {
     buzztyp = "FizzBuzz";
-  } else if (modular3 === 0) {
+  } else if (div3 === 0) {
     buzztyp = "Fizz";
-  } else if (modular5 === 0) {
+  } else if (div5=== 0) {
     buzztyp = "Buzz";
   } else {
-    buzztyp = number;
+    buzztyp = num1;
   }
 
   return buzztyp;
 }
 //perimeter 2//
-function perimeter2(shape: string, num: number): number {
+function perimeter2(shape: string, number: number): number {
   let perimeter: number;
 
   if (shape === "c") {
-    perimeter = 6.28 * num;
+    perimeter = 6.28 * number;
   } else {
-    perimeter = num * 4;
+    perimeter = number* 4;
   }
 
   return perimeter;
@@ -126,8 +123,9 @@ function sumEvenNumbers(n: number): number {
   return sum;
 }
 //multiply by itself//
-function powerUp(num: number, times: number): number {
-  const power: number = num ** times;
+function powerUp(number: number, times: number): number {
+  const power: number
+   = number ** times;
   return power;
 }
 
