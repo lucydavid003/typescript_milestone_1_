@@ -28,20 +28,20 @@ function canDrive(age: number, name: string): string {
 
 //findLargest number//
 function findLargest(
-  number1: number,
-  number2: number,
-  number3: number
+  num1: number,
+  num2: number,
+  num3: number
 ): number | string {
   let largestNumber: number | string;
 
-  if (number1 > number2 && number1 > number3) {
-    largestNumber = number1;
-  } else if (number2 > number1 && number2 > number3) {
-    largestNumber = number2;
-  } else if (number3 > number1 && number3 > number2) {
-    largestNumber = number3;
+  if (number1 > num2 && num1 > num3) {
+    largestNumber = num1;
+  } else if (num2 > num1 && num2 > num3) {
+    largestNumber = num2;
+  } else if (num3 > num1 && num3 > num2) {
+    largestNumber = num3;
   } else {
-    largestNumber = "All numbers are equal";
+    largestNumber = "All nums are equal";
   }
 
   return largestNumber;
