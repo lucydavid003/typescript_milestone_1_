@@ -11,7 +11,7 @@ function sumOfPositives(arr: number[]): number {
   return sum;
 }
 
-console.log(sumOfPositives([1, -3, 5, -2, 9, -8])); 
+console.log(sumOfPositives([1, -3, 5, -2, 9, -8])): 
 console.log(sumOfPositives([-3, -6, 7, -8])); 
 
 //find maximum number//
@@ -38,7 +38,7 @@ type Candidate = {
 
 function findWinner(candidates: Candidate[]): Candidate {
   if (candidates.length === 0) {
-    throw new Error("Candidate list is empty.");
+    throw new Error("empty list.");
   }
 
   let winner: Candidate = candidates[0];
@@ -79,15 +79,7 @@ function findLongestWords(arrOfString: string[]): string {
 console.log(
   findLongestWords(["apple", "banana", "pear", "grapefruit", "mylovelyorandes"]));
 
-  //count properties//
-  function countProperties(item: Record<string, any>): number {
-  const count = Object.keys(item).length;
-  console.log(count);
-  return count;
-}
-
-countProperties({ name: "Alice", age: 25, city: "Paris" });
-
+ 
 
 // Filter by Length//
 
@@ -141,15 +133,14 @@ function differenceEvenOdd(arr3: number[]): number {
 
 console.log(differenceEvenOdd([1, 2, 3, 4, 5, 6]));
 
-//count truthy//
-function countTruthy(object: Record<string, string | number | boolean>): number {
-  let count = 0;
-  for (const key in object) {
-    if (object[key]) {
-      count++;
-    }
-  }
-  return count;
+//countoccurences//
+function countOccurences(arr8: string[]):{[key:string]:number}{
+const counts: {[ key: string]:number}={};
+for (let string of arr8){
+
+}
+
+return counts;
 }
 
 console.log(countTruthy({ a: 0, b: "hello", c: false, d: 42 }));
@@ -157,7 +148,7 @@ console.log(countTruthy({ a: 0, b: "hello", c: false, d: 42 }));
 function average(arr7: number[]): number {
   let sum = 0;
   for (let i = 0; i < arr7.length; i++) {
-    sum += arr7[i];  // Use += to accumulate the sum
+    sum += arr7[i];  //
   }
   let average = sum / arr7.length;
   return average;
@@ -204,25 +195,7 @@ function linearSearchAll(arr6: number[], value: number): number[] {
 
 console.log(linearSearchAll([5, 3, 7, 1, 4, 7], 7));
 
-//count occurences//
-
-function countOccurrences(arr8: string[]): Record<string, number> {
-  const countOfObjects: Record<string, number> = {};
-
-  for (let i = 0; i < arr8.length; i++) {
-    let item = arr8[i];
-    if (countOfObjects[item]) {
-      countOfObjects[item] += 1;
-    } else {
-      countOfObjects[item] = 1;
-    }
-  }
-
-  return countOfObjects;
-}
-
-console.log(
-  countOccurrences(["apple", "banana", "apple", "orange", "banana", "apple"]));
+ "banana", "apple", "orange", "banana", "apple"]));
 //   //remove duplicates//
 function  removeDuplicates(arr:number[]): number[] {
   const uniqueSet : Set<number> =new Set(arr);
@@ -254,9 +227,7 @@ function mostFrequent(arr10: string[]): string {
   return mostFrequent;
 }
 
-console.log(
-  mostFrequent(["apple", "banana", "apple", "orange", "banana", "apple"])
-);
+
   
 //
 
